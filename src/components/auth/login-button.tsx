@@ -1,13 +1,16 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 interface LoginButtonProps {
   children: React.ReactNode;
   asChild?: boolean;
 }
 
 export const LoginButton = ({ children, asChild }: LoginButtonProps) => {
+  const router = useRouter();
   const onClick = () => {
-    console.log("Login button clicked");
+    router.push("/login");
   };
 
   return (
