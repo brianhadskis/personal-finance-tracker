@@ -18,7 +18,7 @@ export const AppHeader = ({ label }: AppHeaderProps) => {
       <h1 className={cn("text-3xl font-semibold", font.className)}>
         Personal Finance Tracker
       </h1>
-      <p className="text-muted-foreground text-sm">label</p>
+      <p className="text-muted-foreground text-sm">{label}</p>
     </div>
   );
 };
