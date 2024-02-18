@@ -4,7 +4,7 @@ export const LoginForm = () => {
   return (
     <AuthCardWrapper
       headerLabel="Login to continue"
-      backButtonLabel="Don't have n account?"
+      backButtonLabel="Don't have an account?"
       backButtonHref="/register"
       showOAuthProviders
     >
