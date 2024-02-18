@@ -8,6 +8,8 @@ import {
 } from "@/components/ui/card";
 import { AppHeader } from "@/components/ui/app-header";
 import { OAuthProviders } from "@/components/auth/oauth-providers";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface AuthCardWrapperProps {
   children: React.ReactNode;
@@ -35,6 +37,11 @@ export const AuthCardWrapper = ({
           <OAuthProviders />
         </CardFooter>
       )}
+      <CardFooter>
+        <Button variant="link" className="font-normal w-full" size="sm" asChild>
+          <Link href={backButtonHref}>{backButtonLabel}</Link>
+        </Button>
+      </CardFooter>
     </Card>
   );
 };
