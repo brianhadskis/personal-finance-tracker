@@ -7,11 +7,11 @@ import { Button } from "../ui/button";
 export const OAuthProviders = () => {
   return (
     <div className="flex flex-col items-center w-full gap-y-2">
-      <p className="mb-2 flex flex-row items-center gap-x-3 text-neutral-500 text-sm">
+      <div className="mb-2 flex flex-row items-center gap-x-3 text-neutral-500 text-sm">
         <div className="h-[1px] w-[65px] bg-neutral-400" />
-        OR
+        <p>OR</p>
         <div className="h-[1px] w-[65px] bg-neutral-400" />
-      </p>
+      </div>
       <Button
         size="lg"
         className="w-full gap-x-2 text-md font-semibold"
